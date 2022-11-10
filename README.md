@@ -1,2 +1,2 @@
 # ProjectTCC
-Esse é um projeto feito para um tcc, da equipe iLume
+Esse é um projeto totalmente feito, focado para o tcc, da equipe iLume
