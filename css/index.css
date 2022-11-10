@@ -1,0 +1,420 @@
+/* CSS da página do home */
+
+body{
+    margin:0;
+    overflow-x: hidden;
+    background: rgb(20, 19, 19);
+}
+
+.body{
+    position: fixed;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+/* Scroll da página */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(13, 13, 13, 1);
+    border-right: 1px rgba(44, 44, 46, 1) solid;
+}
+
+/* Configurações dos textos do cabeçalho */
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: rgba(115, 115, 115, 1);
+    margin-left: 5px;
+}
+
+/* Configurações dos textos do cabeçalho - (Depois) */
+a:hover {
+    color: rgba(255, 255, 255, 1); 
+}
+
+/* Configurações do texto - Project TCC */
+p {
+    color: rgba(115, 115, 115, 1);
+    max-width: 500px;
+}
+
+/* Configurações doe ocultar */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Configurações de organização da página */
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+/* Configurações da ocupação do site todo */
+header {
+    min-height: 100vh;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Configurações da ocupação do site todo */
+header main {
+    width: 100%;
+    margin: 0 0 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Configurações da ocupação do cabeçalho e da parte central */
+nav .container,
+.header-body .container {
+    padding: 1.65em 2.5em;
+}
+
+/* iLume - Tamanho */
+.iLume {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+/* iLume - Cor */
+#menu-btn {
+    color: rgba(44, 44, 46, 1);
+    transition: 0.3s;
+}
+
+/* Configurações do cabeçalho */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.span{
+    opacity: 0;
+  }
+
+.cab{
+    color: rgba(243, 96, 8, 1);
+}
+
+/* Configurações do cabeçalho lateral */
+.menu-btn {
+    background: rgba(13, 13, 13, 1);
+    backdrop-filter: blur(10px);
+    padding: 2.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Configurações do cabeçalho lateral - Menu */
+.menu-btn:hover {
+    background: none;
+}
+
+/* Configurações da localização do cabeçalho lateral - Menu */
+nav .menu-btn {
+    display: none;
+    padding: 0;
+    justify-self: end;
+}
+
+/* Configurações dos icons laterais */
+aside {
+    background: rgba(19, 19, 20, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px rgba(44, 44, 46, 1) solid;
+    position: relative;
+    z-index: 1;
+}
+
+/* Configurações dos icons laterais - Altura */
+.social {
+    padding-bottom: 1em;
+}
+
+/* Configurações dos icons */
+.sup{
+    cursor: pointer;
+}
+
+/* Configurações do icon - Acess */
+.supp{
+    margin-left: 3.5px;
+    cursor: pointer;
+}
+
+/* Configurações do icon - Acess */
+button{
+    margin-left: -1px;
+    cursor: pointer;
+    color: rgba(19, 19, 20, 1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+.suppp:hover{
+    color:#fff;
+      transition: all ease 0.3s;
+    transform: scale(1.2);
+  }
+
+.sup:hover{
+    color:#fff;
+      transition: all ease 0.3s;
+    transform: scale(1.2);
+  }
+
+  .supp:hover{
+    color:#fff;
+      transition: all ease 0.3s;
+    transform: scale(1.2);
+  }
+
+
+/* Configurações da separação dos icons */
+.social li {
+    margin: 1.2em 0;
+}
+
+/* Configurações do cabeçalho interno */
+.menu {
+    background: rgba(13, 13, 13, 1);
+    padding: 2em;
+    height: 100%;
+    width: 20em;
+    position: absolute;
+    top: 0;
+    left: -20em;
+    transition: 
+    500ms
+    cubic-bezier(.74,-0.03,.83,.67);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+/* Configurações do cabeçalho interno - lista */
+.menu ul {
+    margin: 3em;
+}
+
+.menu li {
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+    border-bottom: 1px rgba(44, 44, 46, 1) solid;
+}
+
+/* Configurações do cabeçalho interno - Abertura */
+.menu-open {
+    left: 3em;
+}
+
+/* Configurações da imagem da notícia */
+#news{
+    width: 23.5%;
+    border-radius: 10px;
+   
+}
+
+/* Configurações da imagem do iLume */
+#iLume{
+    width: 125px;
+    margin-left: -15px;
+    margin-top: -23px;
+    position: fixed;
+}
+
+/* Configurações da imagem do Marista */
+#marista{
+    width: 330px;
+    margin-left: 130px;
+    
+    
+}
+
+.copyright{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Configuração do corpo do progresso */
+.progresss {
+    width: 275px;
+    height: 2px;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    margin-left: -15px;
+}
+
+/* Configuração do progresso */
+.progresss div {
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 96, 8, 1);
+    transition: 0.3s;
+}
+
+/* Configurações das opções de notícias */
+.slider-cntrl {
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: none;
+}
+
+/* Configurações das opções de notícias - (Depois) */
+.slider-cntrl:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+#Project{
+    margin-left: 200px;
+}
+
+/* Configurações do texto - Project TCC */
+.Project {
+    font-size: 4.5em;
+    line-height: 1.2em;
+    margin: 0.5em 0;
+}
+
+/* Configurações para animação do JS */
+.pagination-mobile {
+    display: none;
+}
+
+/* Configurações para animação do JS */
+.pagination-mobile li {
+    background: rgba(166, 166, 166, 1);
+    margin: 0 0.7em 0 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Configurações para animação do JS */
+.pagination-mobile .pag-active {
+    background: rgba(243, 96, 8, 1);
+}
+
+
+/* Configurações do footer */
+.footer-home {
+    background: rgba(13, 13, 13, 1);
+    backdrop-filter: blur(10px);
+    margin-top: -50px;
+    max-height: 150px;
+    width: 640px;
+    z-index: 1000;
+    border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+    
+    
+}
+
+
+
+.copel{
+    position: fixed;
+    margin-top: -275px;
+    margin-left: 150px;
+    width: 410px;
+    text-align: justify;
+}
+
+.Saiba{
+    position: fixed;
+    width: 1000px;
+    margin-top: -50px;
+}
+
+/* Configurações do footer e alinhamento - Tamanho da área */
+.footer-home .container > div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Configurações do footer e alinhamento */
+.align-footer {
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Configurações do footer e alinhamento - Direita */
+.align-footer small:nth-of-type(1){
+    color: rgba(115, 115, 115, 1);
+}
+
+/* Configurações do footer - Saiba mais */
+.footer-home a {
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-top: 100px;
+    transition: 0.3s;
+}
+
+.footer-home a:hover {
+    color: #f36008;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: -10px;
+    width: 40px;
+    height: 200px;
+    background: rgb(20, 19, 19);
+    background-size: 40px;
+    z-index: 100000;
+    
+}
+
+.scrollTop2 {
+    position: fixed;
+    bottom: 20px;
+    right: 471px;
+    width: 20px;
+    height: 200px;
+    background: rgb(20, 19, 19);
+    background-size: 40px;
+    z-index: 10000;
+    
+}
