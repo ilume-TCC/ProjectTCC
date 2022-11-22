@@ -1,206 +1,176 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu';
-  }
-  
-body{
-    margin:0;
-    overflow-x: hidden;
-    background: rgb(20, 19, 19);
-}
-
-.container{
+.container-report{
     position: relative;
     max-width: 430px;
     width: 100%;
-    background: rgba(13, 13, 13, 1);
+    background: #0D0D0D;
     border-radius: 10px;
-    
     overflow: hidden;
     margin: 0 50px;
-    margin-left: 150px;
+    margin-left: 90px;
     margin-top: -515px;
 }
-.container .forms{
+
+.container-report .forms{
     display: flex;
     align-items: center;
     height: 450px;
     width: 200%;
 }
-.container .form{
+
+.container-report .form{
     width: 50%;
     padding: 30px;
-    background-color: rgba(13, 13, 13, 1);
+    background-color: #0D0D0D;
     transition: margin-left 0.18s ease;
 }
 
-.container .signup{
-    opacity: 1;
-}
-
-.container.active .forms{
-    height: 600px;
-}
-.container .form .title{
+.container-report .form .title{
     position: relative;
     font-size: 27px;
     font-weight: 600;
-    color: #fff;
+    color: #FFFFFF;
 }
-.form .title::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 30px;
-    background-color: #F36008;
-    border-radius: 25px;
-}
+
 .form .input-field{
     position: relative;
-    height: 40px;
+    height: 30px;
     width: 100%;
     margin-top: 15px;
 }
+
 .input-field input{
-    background-color: rgba(13, 13, 13, 1);
+    background-color: #0D0D0D;
     position: absolute;
-    color: #fff;
+    color: #FFFFFF;
     height: 100%;
     width: 100%;
     padding: 0 35px;
     border: none;
     outline: none;
     font-size: 16px;
-    border-bottom: 2px solid #757575;
+    border-bottom: 2px solid #737373;
     border-top: 2px solid transparent;
     transition: all 0.2s ease;
 }
+
 .input-field input:is(:focus, :valid){
-    border-bottom-color: #48DB3B;
+    border-bottom-color: #17B609;
 }
+
 .input-field i{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
+    color: #737373;
     font-size: 20px;
     transition: all 0.2s ease;
 }
+
 .input-field input:is(:focus, :valid) ~ i{
-    color: #48DB3B;
+    color: #17B609;
 }
 
 .input-field i.icon{
     left: 0;
 }
-.input-field i.showHidePw{
-    right: 0;
-    cursor: pointer;
-    padding: 10px;
+
+#input-file{
+    margin: 12px -5px;
 }
+
 .form .checkbox-text{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
 }
+
 .checkbox-text .checkbox-content{
     display: flex;
     align-items: center;
 }
+
 .checkbox-content input{
     margin: 0 8px -2px 4px;
-    accent-color: #48DB3B;
+    accent-color: #17B609;
 }
+
 .form .text{
-    color: #333;
+    color: #737373;
     font-size: 14px;
 }
-.form a.text{
-    color: #F36008;
-    text-decoration: none;
-}
-.form a:hover{
-    text-decoration: underline;
-}
+
 .form .button{
     margin-top: 35px;
 }
+
 .form .button input{
+    margin-top: -10px;
+    height: 150%;
     border: none;
-    color: #fff;
+    color: #0D0D0D;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 6px;
-    background-color: #F36008;
+    background-color: #F07508;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .button input:hover{
         transform: scale(1.01);
-        box-shadow: 1px 1px 10px #F36008;
+        box-shadow: 1px 1px 10px #F07508;
 }
 
-.form .login-signup{
-    margin-top: 30px;
-    text-align: center;
-}
-
-
-
-
-.container2 .forms{
+.container-map .forms{
     position: fixed;
-    margin-left: 600px;
-    margin-top: -502px;
-    
+    margin-left: 590px;
+    margin-top: -450px;
     display: flex;
     align-items: center;
-   
     width: 200%;
-    
     transition: height 0.2s ease;
 }
 
-.container3{
+iframe{
+  border-radius: 6px;
+}
+
+.container-incident{
   position: fixed;
   max-width: 450px;
   width: 100%;
-  background: rgba(13, 13, 13, 1);
+  background: #0D0D0D;
   border-radius: 10px;
-  
   overflow: hidden;
   margin: 0 20px;
-  margin-left: 600px;
+  margin-left: 590px;
   margin-top: -183px;
 }
-.container3 .forms{
+
+.container-incident .forms{
   display: flex;
   align-items: center;
   height: 182px;
   width: 200%;
 }
-.container3 .form{
+
+.container-incident .form{
   width: 50%;
   padding: 30px;
-  background-color: rgba(13, 13, 13, 1);
+  background-color: #0D0D0D;
   transition: margin-left 0.18s ease;
 }
 
-.container3 .form .title{
+.container-incident .form .title{
   position: relative;
   font-size: 27px;
   font-weight: 600;
-  color: #fff;
+  color: #FFFFFF;
   margin: 0 20px;
- 
 }
+
 .form .title::before{
   content: '';
   position: absolute;
@@ -208,274 +178,20 @@ body{
   bottom: 0;
   height: 2px;
   width: 30px;
-  background-color: #F36008;
+  background-color: #F07508;
   border-radius: 25px;
 }
 
-
-iframe{
-    border-radius: 6px;
+.h3{
+    margin-left: 100px;
+    margin-top: -5px;
 }
 
 .ul{
-  
-  margin: 0 20px;
-  color: #757575;
+  margin: 0 50px;
+  color: #737373;
 }
 
 .span{
-  opacity: 0;
-}
-
-.cab{
-  color: rgba(243, 96, 8, 1);
-}
-
-
-
-
-
-
-
-
-
-  /* CSS da página do home */
-
-
-  /* Scroll da página */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: rgba(13, 13, 13, 1);
-    border-right: 1px rgba(44, 44, 46, 1) solid;
-  }
-  
-  /* Configurações dos textos do cabeçalho */
-  a {
-    text-decoration: none;
-    transition: 0.3s;
-    color: rgba(115, 115, 115, 1);
-    margin-left: 5px;
-  }
-  
-  /* Configurações dos textos do cabeçalho - (Depois) */
-  a:hover {
-    color: rgba(255, 255, 255, 1); 
-  }
-  
-  /* Configurações do texto - Project TCC */
-  p {
     opacity: 0;
-  }
-  
-  /* Configurações doe ocultar */
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Configurações de organização da página */
-  .container5 {
-    max-width: 1350px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: start;
-    align-items: center;
-    
-   
-  }
-  
-  /* Configurações da ocupação do site todo */
-  header {
-    min-height: 100vh;
-    color: rgba(255, 255, 255, 1);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Configurações da ocupação do site todo */
-  header main {
-    width: 100%;
-    margin: 0 0 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  
-  /* Configurações da ocupação do cabeçalho e da parte central */
-  nav .container5,
-  .header-body .container {
-    padding: 1.65em 2.5em;
-  }
-  
-  /* iLume - Tamanho */
-  .iLume {
-    font-size: 3em;
-    font-weight: 600;
-    
-  }
-  
-  /* iLume - Cor */
-  #menu-btn {
-    color: rgba(44, 44, 46, 1);
-    transition: 0.3s;
-  }
-  
-  /* Configurações do cabeçalho */
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  
-  /* Linha de destaque no cabeçalho */
-  .link-active {
-    color: rgba(243, 96, 8, 1);
-    border-bottom: 2px rgba(243, 96, 8, 1) solid;
-  }
-  
-  /* Configurações do cabeçalho lateral */
-  .menu-btn {
-    background: rgba(13, 13, 13, 1);
-    backdrop-filter: blur(10px);
-    padding: 2.2em;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* Configurações do cabeçalho lateral - Menu */
-  .menu-btn:hover {
-    background: none;
-  }
-  
-  /* Configurações da localização do cabeçalho lateral - Menu */
-  nav .menu-btn {
-    display: none;
-    padding: 0;
-    justify-self: end;
-  }
-  
-  /* Configurações dos icons laterais */
-  aside {
-    background: rgba(19, 19, 20, 1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-right: 1px rgba(44, 44, 46, 1) solid;
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Configurações dos icons laterais - Altura */
-  .social {
-    padding-bottom: 1em;
-  }
-  
-  /* Configurações dos icons */
-  .sup{
-    cursor: pointer;
-
-  }
-  
-  /* Configurações do icon - Acess */
-  .supp{
-    margin-left: 3.5px;
-    cursor: pointer;
-  }
-  
-  /* Configurações do icon - Acess */
-  button{
-    margin-left: -1px;
-    cursor: pointer;
-    color: rgba(19, 19, 20, 1);
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
-
-  .sup:hover{
-    color:#fff;
-      transition: all ease 0.3s;
-    transform: scale(1.2);
-  }
-
-  .supp:hover{
-    color:#fff;
-      transition: all ease 0.3s;
-    transform: scale(1.2);
-  }
-
-.suppp:hover{
-    color:#fff;
-      transition: all ease 0.3s;
-    transform: scale(1.2);
-  }
-  
-  /* Configurações da separação dos icons */
-  .social li {
-    margin: 1.2em 0;
-  }
-  
-  /* Configurações do cabeçalho interno */
-  .menu {
-    background: rgba(13, 13, 13, 1);
-    padding: 2em;
-    height: 100%;
-    width: 20em;
-    position: absolute;
-    top: 0;
-    left: -20em;
-    transition: 500ms cubic-bezier(.74,-0.03,.83,.67);
-    overflow-y: scroll;
-    overflow-x: hidden;
-    z-index: 0;
-  }
-  
-  /* Configurações do cabeçalho interno - lista */
-  .menu ul {
-    margin: 3em;
-  }
-  
-  .menu li {
-    padding: 0.5em 0;
-    margin: 0.5em 0;
-    border-bottom: 1px rgba(44, 44, 46, 1) solid;
-  }
-  
-  /* Configurações do cabeçalho interno - Abertura */
-  .menu-open {
-    left: 3em;
-  }
-  
-
-
-  
-/* .scrollTop{
-    position: fixed;
-    bottom: 30px;
-    right: 38px;
-    width: 30px;
-    height: 30px;
-    background: rgba(13, 13, 13, 1);
-    border-radius: 6px;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    z-index: 10;
-  }
-   */
-  .back{
-    color: #F36008;
-    margin-left: 2px;
-    margin-top: 5px;
-  }
-  

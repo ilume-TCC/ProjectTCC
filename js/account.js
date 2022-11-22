@@ -4,7 +4,7 @@ const container = document.querySelector(".container"),
       signUp = document.querySelector(".signup-link"),
       login = document.querySelector(".login-link");
 
-    //   js code to show/hide password and change icon
+    //   js para mostrar/ocultar a senha e alterar o ícone
     pwShowHide.forEach(eyeIcon =>{
         eyeIcon.addEventListener("click", ()=>{
             pwFields.forEach(pwField =>{
@@ -25,7 +25,7 @@ const container = document.querySelector(".container"),
         })
     })
 
-    // js code to appear signup and login form
+    // js para aparecer o formulário de signup e login
     signUp.addEventListener("click", ( )=>{
         container.classList.add("active");
     });

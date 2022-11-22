@@ -22,7 +22,7 @@ require_once('conn.php');
 
         $_SESSION['senha_usuario'] = $user['senha_usuario'];
         
-        header('location: ../');
+        header('location: ../pages/home-user.php');
 
     } else{
         echo "<script>alert('Usuario não registrado.');window.location.replace('../pages/account.php');</script>";

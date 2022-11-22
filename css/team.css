@@ -1,10 +1,26 @@
-/* CSS da página da team */
+#representatives{
+  margin-top: -130px;
+}
 
-/* Configurações do card */
+.progress {
+  width: 275px;
+  height: 2px;
+  background: #000000;
+  position: fixed;
+  margin-left: -15px;
+}
+
+.progress div {
+  width: 0%;
+  height: 100%;
+  background: #F07508;
+  transition: 0.3s;
+}
+
 .card{
   width:300px;
   height: 450px;
-  background: rgba(5, 5, 5, 0.5);
+  background: #0D0D0D;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -16,9 +32,6 @@
   margin-left: 10px;
 }
 
-
-
-/* Configurações da ocupação do card */
 .container-card{
   display: flex;
   justify-content: center;
@@ -27,7 +40,6 @@
   margin-top: -35px;
 }
 
-/* Configurações da linha de destaque */
 .top-bar{
   width:50%;
   height: 4px;
@@ -35,11 +47,10 @@
   left: 50%;
   top: 0px;
   transform: translateX(-50%);
-  background-color: #F36008;
+  background-color: #F07508;
   border-radius: 0px 0px 10px 10px;
 }
 
-/* Configurações da ocupação dos icon's */
 .nave{
   display: flex;
   justify-content: space-between;
@@ -47,14 +58,6 @@
   width: 100%;
 }
 
-/* Configurações da descrição da função */
-small{
-  color: var(--secondary);
-  text-align: justify;
-  padding-top: 10px;
-}
-
-/* Configuração de centralização dentro do card */
 .photo{
   display: flex;
   justify-content: center;
@@ -62,12 +65,10 @@ small{
   flex-direction: column;
 }
 
-/* Configurações do icon de profissão */
 #profession{
   width: 10%;
 }
 
-/* Configurações da foto de perfil */
 .photo img{
   width:150px;
   height: 150px;
@@ -77,84 +78,26 @@ small{
   object-position: center;
 }
 
-/* Configurações do nome de perfil */
 .photo strong{
   font-weight: 500;
   font-size: 25px;
-  color: #fff;
+  color: #FFFFFF;
   letter-spacing: 1px;
   margin-top: 10px;
 }
 
-/* Configurações do email de perfil */
 .photo h5{
   font-size: 0.8rem;
   font-weight: 500;
-  color: #7a7a7a;
+  color: #737373;
   margin: 5px 0px;
 }
 
-#team{
-  width:120%;
-  min-height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-/* Configuração do corpo do progresso */
-.progress {
-  width: 275px;
-  height: 2px;
-  background: rgba(0, 0, 0, 1);
-  position: fixed;
-  margin-left: -15px;
-}
-
-/* Configuração do progresso */
-.progress div {
-  width: 0%;
-  height: 100%;
-  background: rgba(243, 96, 8, 1);
-  transition: 0.3s;
-}
-
-/* Cartões - função */
 h6{
   font-size: 13px;
-  color: #F36008;
+  color: #F07508;
   font-weight: 650;
   height: 60px;
-}
-
-/* Configurações da altura dos representantes */
-h1{
-  margin-top: -130px;
-}
-
-/* Configurações da ocupação da descrição da função */
-.footer-team{
-  width: 530px;
-  margin-top: -170px;
-  height: 160px;
-  background: rgba(5, 5, 5, 0.5);
-  backdrop-filter: blur(10px);
-}
-
-/* Configurações do alinhamento da descrição da função */
-.align-team {
-  padding: 1.5em 2em;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.socialy a{
-	padding: 20px;
-	color:#737373;
-	font-size:1.3rem;
-  margin-right: 5px;
 }
 
 .socialy{
@@ -162,12 +105,45 @@ h1{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #FFFFFF;
+	background-color: #FFFFFFFF;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
+
+.socialy a{
+	padding: 20px;
+	color:#141313;
+	font-size:1.3rem;
+  margin-right: 5px;
+}
+
+.ins{
+  font-size: 1.2em;
+}
+
 .socialy a:hover{
-  color:#737373;
+  color:#141313;
 	transition: all ease 0.3s;
   transform: scale(1.1);
+}
+
+.footer-team{
+  width: 530px;
+  margin-top: -170px;
+  height: 160px;
+  background: #0D0D0D;
+  backdrop-filter: blur(10px);
+}
+
+.align-team {
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+small{
+  color: #737373;
+  text-align: justify;
+  padding-top: 10px;
 }
